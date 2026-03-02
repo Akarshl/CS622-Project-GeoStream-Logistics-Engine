@@ -29,3 +29,17 @@ GeoStream processes incoming requests through four distinct algorithmic layers t
 * **Testing:** PyTest (Unit Testing Suite)
 * **Environment:** GitHub Codespaces / Linux
 
+---
+
+## Installation & Execution
+
+Follow these steps in your terminal to initialize the environment and run the engine:
+
+### 1. Install Dependencies
+```bash
+pip install -r requirements.txt
+python3 data/generate_data.py
+export PYTHONPATH=$PYTHONPATH:.
+pytest tests/test_structures.py
+export PYTHONPATH=$PYTHONPATH:.
+streamlit run app.py
