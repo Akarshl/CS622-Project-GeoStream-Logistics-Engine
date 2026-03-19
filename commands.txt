@@ -1,0 +1,5 @@
+pip install -r requirements.txt
+python3 data/generate_data.py
+export PYTHONPATH=$PYTHONPATH:.
+pytest tests/test_structures.py
+streamlit run app.py
